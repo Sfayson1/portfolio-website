@@ -1,19 +1,22 @@
+/* Tailwind CSS imports */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Light theme colors */
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --light-theme-text-color: 0, 0, 0;
+--light-theme-bg-start: 214, 219, 220;
+--light-theme-bg-end: 255, 255, 255;
 }
 
+/* Dark theme colors */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:root {
+--dark-theme-text-color: 255, 255, 255;
+--dark-theme-bg-start: 0, 0, 0;
+--dark-theme-bg-end: 0, 0, 0;
+}
 }
 
 body {
@@ -26,8 +29,9 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* Utility classes */
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.text-wrap {
+overflow-wrap: break-word;
+}
 }
