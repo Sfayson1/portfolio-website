@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Inter, Montserrat, Crimson_Text } from "next/font/google";
+import "./globals.css"; 
+
 
 const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
+const crimsonText = Crimson_Text({
+  subsets: ["latin"],
+  weight: "400"
+});
 
 export const metadata: Metadata = {
   title: "Sherika Fayson",
@@ -11,11 +17,15 @@ export const metadata: Metadata = {
 
 type RootLayoutProps = {
   children: React.ReactNode;
-  };
-  
-  export default function RootLayout({ children }: RootLayoutProps) {
-    return (
-    {children}
-    
-    );
-    }
+};
+
+export default function RootLayout({ children }: RootLayoutProps) {
+  return (
+    <html lang="en" className={`${inter.className} ${montserrat.className} ${crimsonText.className}`}> {/* Apply generated font classes */}
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
+      <body>{children}</body>
+    </html>
+  );
+}

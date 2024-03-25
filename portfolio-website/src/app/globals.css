@@ -35,3 +35,15 @@ body {
 overflow-wrap: break-word;
 }
 }
+
+/* themes */
+:root {
+  --primary-bright-blue: #3AAED8;
+  --primary-light-turquoise: #7CFEF0;
+  --primary-mint-green: #D7F9F1;
+  --primary-deep-green: #618B4A;
+  --primary-vibrant-green: #28965A;
+  --primary-sage-green: #629460;
+  --text-light-mode: #333333;
+  --text-dark-mode: #F5F5F5;
+}
