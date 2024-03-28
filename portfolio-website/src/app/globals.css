@@ -46,4 +46,16 @@ overflow-wrap: break-word;
   --primary-sage-green: #629460;
   --text-light-mode: #333333;
   --text-dark-mode: #F5F5F5;
+  --color-background-dark: #1f1f1f;
+  --color-background-light: #ffffff
+}
+
+body.theme-dark {
+  --color-background: var(--color-background-dark);
+  --color-text: var(--text-dark-mode);
+}
+
+body {
+  background-color: var(--primary-mint-green);
+  color: var(--text-light-mode);
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat, Crimson_Text } from "next/font/google";
 import "./globals.css"; 
+import ThemeProvider from './ThemeContext'
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,13 +20,23 @@ type RootLayoutProps = {
   children: React.ReactNode;
 };
 
+
 export default function RootLayout({ children }: RootLayoutProps) {
+  
   return (
-    <html lang="en" className={`${inter.className} ${montserrat.className} ${crimsonText.className}`}> {/* Apply generated font classes */}
+  
+    <html lang="en" className={`${inter.className} ${montserrat.className} ${crimsonText.className}`}> 
+    
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body>{children}</body>
+    
+      <body>
+        <ThemeProvider>
+        {children}
+        </ThemeProvider>
+      </body>
     </html>
+
   );
 }
