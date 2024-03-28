@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat, Crimson_Text } from "next/font/google";
 import "./globals.css"; 
-import ThemeProvider from './ThemeContext'
+
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -32,9 +32,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
       </head>
     
       <body>
-        <ThemeProvider>
+      
         {children}
-        </ThemeProvider>
+        
       </body>
     </html>
 

@@ -1,15 +1,14 @@
 'use client'
-import { useState } from 'react';
+import { useContext} from 'react';
+import { ThemeContext } from '../Context/ThemeContext'
 import { FaSun, FaMoon } from 'react-icons/fa';
 import './ToggleSwitch.css';
 
-const ToggleSwitch = ({ backgroundLight, backgroundDark, textLight, textDark }) => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+const ToggleSwitch = () => {
+ const {theme, toggleTheme} = useContext(ThemeContext);
 
   const handleToggle = () => {
-    setIsDarkMode(prevMode => !prevMode);
-    document.body.style.backgroundColor = isDarkMode ? backgroundLight : backgroundDark;
-    document.body.style.color = isDarkMode ? textLight : textDark;
+    toggleTheme()
   };
 
   return (
@@ -18,7 +17,7 @@ const ToggleSwitch = ({ backgroundLight, backgroundDark, textLight, textDark }) 
         className='checkbox'
         type="checkbox"
         onChange={handleToggle}
-        checked={isDarkMode}
+        checked={theme === 'dark'}
         id="chk"
       />
       <label className='label' htmlFor="chk">
