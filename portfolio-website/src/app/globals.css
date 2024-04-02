@@ -3,34 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Light theme colors */
+/* Base theme colors */
 :root {
-  --text-color: var(--text-light-mode); 
-  --bg-color: var(--primary-mint-green);
+  --text-color: #333333; /* Fallback for light theme */
+  --bg-color: #D7F9F1; /* Fallback for light theme */
 }
 
-/* Dark theme colors */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-color: var(--text-dark-mode);
-    --bg-color: var(--color-background-dark);
-  }
-}
-
-body {
-  color: var(--text-color); 
-  background: var(--bg-color)
-      
-}
-
-/* Utility classes */
-@layer utilities {
-  .text-wrap {
-    overflow-wrap: break-word;
-  }
-}
-
-/* themes */
+/* Define color variables */
 :root {
   --primary-bright-blue: #3AAED8;
   --primary-light-turquoise: #7CFEF0;
@@ -44,12 +23,26 @@ body {
   --color-background-light: #ffffff;
 }
 
-.theme-dark {
-  --color-background: var(--color-background-dark);
-  --color-text: var(--text-dark-mode);
+/* Light theme styles */
+.theme-light {
+  --text-color: var(--text-light-mode);
+  --bg-color: var(--primary-mint-green);
 }
 
-.theme-light {
-  background-color: var(--primary-mint-green);
-  color: var(--text-light-mode);
+/* Dark theme styles */
+.theme-dark {
+  --text-color: var(--text-dark-mode);
+  --bg-color: var(--color-background-dark);
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+/* Utility classes */
+@layer utilities {
+  .text-wrap {
+    overflow-wrap: break-word;
+  }
 }
