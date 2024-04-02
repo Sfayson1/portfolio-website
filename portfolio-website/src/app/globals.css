@@ -1,49 +1,49 @@
 /* Tailwind CSS imports */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@tailwind base; /* Imports Tailwind's base styles, which include Normalize.css for consistent styling across browsers */
+@tailwind components; /* Imports Tailwind's component classes, enabling utility-first component design */
+@tailwind utilities; /* Imports Tailwind's utility classes, providing a wide range of CSS properties as utility classes */
 
-/* Light theme colors */
+/* Base theme colors */
 :root {
-  --light-theme-text-color: 0, 0, 0;
---light-theme-bg-start: 214, 219, 220;
---light-theme-bg-end: 255, 255, 255;
+  --text-color: #333333; /* Sets a default text color variable as a fallback for light theme */
+  --bg-color: #D7F9F1; /* Sets a default background color variable as a fallback for light theme */
 }
 
-/* Dark theme colors */
-@media (prefers-color-scheme: dark) {
+/* Define color variables */
 :root {
---dark-theme-text-color: 255, 255, 255;
---dark-theme-bg-start: 0, 0, 0;
---dark-theme-bg-end: 0, 0, 0;
-}
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-/* Utility classes */
-@layer utilities {
-.text-wrap {
-overflow-wrap: break-word;
-}
-}
-
-/* themes */
-:root {
+  /* These are global color variables that can be used throughout the site for consistent theming */
   --primary-bright-blue: #3AAED8;
   --primary-light-turquoise: #7CFEF0;
   --primary-mint-green: #D7F9F1;
   --primary-deep-green: #618B4A;
   --primary-vibrant-green: #28965A;
   --primary-sage-green: #629460;
-  --text-light-mode: #333333;
-  --text-dark-mode: #F5F5F5;
+  --text-light-mode: #333333; /* Text color for light mode */
+  --text-dark-mode: #F5F5F5; /* Text color for dark mode */
+  --color-background-dark: #1f1f1f; /* Background color for dark mode */
+  --color-background-light: #ffffff; /* Background color for light mode */
+}
+
+/* Light theme styles */
+.theme-light {
+  --text-color: var(--text-light-mode); /* Overrides text color variable for light theme */
+  --bg-color: var(--primary-mint-green); /* Overrides background color variable for light theme */
+}
+
+/* Dark theme styles */
+.theme-dark {
+  --text-color: var(--text-dark-mode); /* Overrides text color variable for dark theme */
+  --bg-color: var(--color-background-dark); /* Overrides background color variable for dark theme */
+}
+
+body {
+  color: var(--text-color); /* Applies the text color variable to the body text */
+  background-color: var(--bg-color); /* Applies the background color variable to the body background */
+}
+
+/* Utility classes */
+@layer utilities {
+  .text-wrap {
+    overflow-wrap: break-word; /* Ensures text breaks properly within its container, preventing overflow */
+  }
 }
