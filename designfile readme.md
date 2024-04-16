@@ -1,5 +1,6 @@
 ## Web app wireframe 
 
 Updated version of wireframe.
-![alt text](image.png)
+
+![Sherika website wireframe](image-1.png)
 
