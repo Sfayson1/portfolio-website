@@ -1,0 +1,36 @@
+
+.about-me{
+    position: absolute;
+    left: 798px;
+    top: 248px;
+    margin-right: 120px;
+}
+.paragraph{
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    position: absolute;
+    margin-left: 20px;
+    border-top-left-radius: 270px;
+    border-top-right-radius: 267px;
+    max-width: 50%;
+    height: auto; 
+    margin-top: 104px;
+}
+
+.resume{
+    display: flex;
+    justify-content: center;
+}
+
+.resume-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #629460;
+    border-radius: 18px;
+    width: 134px;
+    height: 44px;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); 
+}
