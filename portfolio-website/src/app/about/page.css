@@ -1,29 +1,34 @@
-
-.about-me{
+/* Centered and more responsive positioning for the about-me section */
+.about-me {
     position: absolute;
-    left: 798px;
-    top: 248px;
+    left: 50%;  /* Centering the element horizontally */
+    top: 248px; /* Consider using 'vh' units for vertical responsiveness */
+    transform: translateX(-50%); /* Centers the element by shifting it left half its own width */
     margin-right: 120px;
 }
-.paragraph{
+
+/* Basic paragraph styling, suitable as is for adding bottom margin */
+.paragraph {
     margin-bottom: 20px;
 }
 
+/* Improved profile image styling with round shape and better positioning */
 .profile-img {
     position: absolute;
-    margin-left: 20px;
-    border-top-left-radius: 270px;
-    border-top-right-radius: 267px;
+    left: 50px;  /* Adjusted for better control */
+    top: 104px;  /* Direct and easier to manage positioning */
+    border-radius: 50%; /* Ensures the image is completely round */
     max-width: 50%;
-    height: auto; 
-    margin-top: 104px;
+    height: auto;
 }
 
-.resume{
+/* Flexbox layout for the resume container to center its content */
+.resume {
     display: flex;
     justify-content: center;
 }
 
+/* Enhanced resume button styling with clickable indication and hover effect */
 .resume-button {
     display: flex;
     justify-content: center;
@@ -32,5 +37,10 @@
     border-radius: 18px;
     width: 134px;
     height: 44px;
-    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); 
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+    cursor: pointer; /* Indicates the element is clickable */
+}
+
+.resume-button:hover {
+    background-color: #527a50; /* A darker shade for a subtle hover effect */
 }
