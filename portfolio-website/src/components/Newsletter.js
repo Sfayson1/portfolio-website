@@ -3,7 +3,7 @@ import '../app/globals.css';
 
 const Newsletter = () => {
     return (
-      <div className="h-screen flex flex-col justify-center items-center px-4">
+      <div className="h-screen flex flex-col justify-center items-center px-4 m-0">
         <h2 className="text-2xl font-bold mb-4 text-center">
           Subscribe to my Newsletter
         </h2>

@@ -3,46 +3,48 @@ import ToggleSwitch from './ToggleSwitch';
 
 const NavigationMenu = () => {
   return (
-    <nav className={`flex items-center justify-between px-4 py-2 `}>
-      <h1 className="text-xl">Sherika's Portfolio</h1>
-      <div>
-      <ul className={`flex items-center justify-between px-4 py-2 `}>
-        <li className="mx-2">
+    <nav className="flex justify-between px-4 py-2 ">
+      {/* Logo on the left */}
+      <h1 className="text-xl justify-start">Sherika's Portfolio</h1>
+
+      {/* Navigation links on the right */}
+      <ul className="flex justify-evenly space-x-4">
+        <li>
           <Link href="/">
-            <span>Home</span>
+            <span className="hover:text-gray-300">Home</span>
           </Link>
         </li>
-        <li className="mx-2">
+        <li>
           <Link href="/about">
-            About
+            <span className="hover:text-gray-300">About</span>
           </Link>
         </li>
-        <li className="mx-2">
+        <li>
           <Link href="/special-features">
-            <span>Special Features</span>
+            <span className="hover:text-gray-300">Florida Man News</span>
           </Link>
         </li>
-        <li className="mx-2">
+        <li>
           <Link href="/blog">
-            <span>Blog</span>
+            <span className="hover:text-gray-300">Blog</span>
           </Link>
         </li>
-        <li className="mx-2">
+        <li>
           <Link href="/contact">
-            <span>Contact</span>
+            <span className="hover:text-gray-300">Contact</span>
           </Link>
         </li>
-        <li className="mx-2">
+        <li>
           <Link href="/resume">
-            <span>Resume</span>
+            <span className="hover:text-gray-300">Resume</span>
           </Link>
         </li>
       </ul>
-      </div>
+
+      {/* Toggle Switch or other component on the right */}
       <div className="toggle-switch-container">
         <ToggleSwitch />
       </div>
-      
     </nav>
   );
 };

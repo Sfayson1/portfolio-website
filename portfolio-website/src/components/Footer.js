@@ -1,16 +1,15 @@
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import SocialLinks from "./socialLinks";
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="flex items-center justify-center px-4 py-2 ">
-        <FaLinkedin />
-        <FaGithub />
+    <footer className=" py-4">
+      <div className="flex justify-center items-center space-x-4">
+      <SocialLinks/>
       </div>
-      <div className="container">
-        <p className="p-4 text-center light">&copy; 2024 Your Website Name</p>
-      </div>
+      <p className="text-center mt-4">
+        &copy; {new Date().getFullYear()} Your Website Name. All rights
+        reserved.
+      </p>
     </footer>
   );
 };
