@@ -1,40 +1,15 @@
 .about-me {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 80vh; /* Adjust height as needed */
-  }
-  
-  .paragraph {
-    margin: 20px 0; /* Maintain existing margin styling */
-  }
-  
-  .profile-img {
-    border-radius: 50%; /* Make the image uniformly round */
-    width: 150px; /* Adjust image size as needed */
-    height: 150px; /* Adjust image size as needed */
-    object-fit: cover;
-  }
-  
-  .resume {
+}
+
+.resume-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Adjust height as needed */
-  }
-  
-  .resume-button {
-    cursor: pointer;
-    padding: 12px 24px;
-    border: 2px solid #333;
-    border-radius: 6px;
-    background-color: transparent;
-    color: #333;
-    transition: background-color 0.3s ease;
-  }
-  
-  .resume-button:hover {
-    background-color: #333;
-    color: #fff;
-  }
-  
+    background-color: #629460;
+    border-radius: 18px;
+    width: 134px;
+    height: 44px;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); 
+}
