@@ -13,7 +13,6 @@ export const ThemeProvider = ({ children }) => {
     useEffect(()=> {
         document.body.classList.remove('theme-light', 'theme-dark');
         document.body.classList.add(`theme-${theme}`)
-        console.log(theme)
     }, [theme])
 
     return (

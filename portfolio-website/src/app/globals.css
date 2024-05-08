@@ -47,3 +47,7 @@ body {
     overflow-wrap: break-word; /* Ensures text breaks properly within its container, preventing overflow */
   }
 }
+
+.subscribe {
+  background-color: var(--primary-sage-green);
+}

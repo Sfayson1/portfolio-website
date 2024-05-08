@@ -14,7 +14,7 @@ const ToggleSwitch = () => {
   return (
     <div>
       <input
-        className='checkbox'
+        className='checkbox flex justify-end'
         type="checkbox"
         onChange={handleToggle}
         checked={theme === 'dark'}
