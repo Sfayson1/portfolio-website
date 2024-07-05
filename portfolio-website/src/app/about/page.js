@@ -8,7 +8,6 @@ import AboutMe from '@/components/AboutMe';
 
 const AboutPage = () => {
   return (
-    <ThemeProvider>
       <div className="flex flex-col min-h-screen light">
        
 
@@ -17,7 +16,7 @@ const AboutPage = () => {
 
        
         <div className="flex justify-center my-8">
-          <Image className="rounded-full w-1/3 h-auto" src={Profile} alt="Picture of Sherika Fayson"  />
+          <Image className="rounded-full w-1/3 h-auto" src={Profile} alt="Picture of Sherika Fayson" priority />
         </div>
 
        
@@ -33,7 +32,6 @@ const AboutPage = () => {
         </div>
         <Footer />
       </div>
-    </ThemeProvider>
   );
 };
 
