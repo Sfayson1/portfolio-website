@@ -1,11 +1,10 @@
 'use client'
-import { useContext} from 'react';
-import { ThemeContext } from '../Context/ThemeContext'
+import useTheme from '@/app/useTheme';
 import { FaSun, FaMoon } from 'react-icons/fa';
 import './ToggleSwitch.css';
 
 const ToggleSwitch = () => {
- const {theme, toggleTheme} = useContext(ThemeContext);
+ const {theme, toggleTheme} = useTheme();
 
   const handleToggle = () => {
     toggleTheme()

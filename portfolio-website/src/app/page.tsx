@@ -6,7 +6,6 @@ import Newsletter from '@/components/Newsletter';
 
 export default function Home() {
   return (
-    <ThemeProvider>
       <div className="flex flex-col min-h-screen light">
           <Navigation />
        
@@ -16,6 +15,6 @@ export default function Home() {
         <Newsletter />
         <Footer />
       </div>
-    </ThemeProvider>
+
   );
 }
