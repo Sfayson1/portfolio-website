@@ -6,9 +6,9 @@ import Footer from "@/components/Footer";
 
 const ContactPage = () => {
     return (
-      <ThemeProvider>
-        <NavigationMenu/>
-      <div className="h-screen flex flex-col  px-4">
+        <>
+        <NavigationMenu />
+        <div className="h-screen flex flex-col  px-4">
         <div className="text-center">
           <h2 className="text-3xl font-bold mt-20">Contact Me</h2>
           <p className="text-center mt-8">
@@ -16,13 +16,13 @@ const ContactPage = () => {
             or simply want to connect, feel free to reach out or connect with me on social media.
             I'm excited to engage with you and explore potential opportunities together.
           </p>
-          <ContactForm/>
+          <ContactForm />
         </div>
         <div className="mt-20">
-          <Footer/>
+          <Footer />
         </div>
       </div>
-      </ThemeProvider>
+      </>
     );
   };
   
