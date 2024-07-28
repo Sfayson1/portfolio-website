@@ -20,7 +20,7 @@ const NavigationMenu = () => {
           </Link>
         </li>
         <li>
-          <Link href="/special-features">
+          <Link href="/floridaman">
             <span className="hover:text-gray-300">Florida Man News</span>
           </Link>
         </li>
