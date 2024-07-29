@@ -1,7 +1,8 @@
-import { ThemeProvider } from "@/Context/ThemeContext";
+import Profile from '../images/IMG_0687.jpg';
 import NavigationMenu from "@/components/Navigation";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 
 const ContactPage = () => {
