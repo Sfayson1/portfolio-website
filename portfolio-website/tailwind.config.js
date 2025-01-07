@@ -1,15 +1,17 @@
 /** @type {import('tailwindcss').Config} */
-export const content = ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'];
+export const content = [
+  './src/**/*.{js,jsx,ts,tsx}',
+  './public/index.html'
+];
 export const theme = {
   extend: {
     colors: {
       primary: {
-        brightBlue: '#3AAED8',
-        lightTurquoise: '#7CFEF0',
-        mintGreen: '#D7F9F1',
-        deepGreen: '#618B4A',
-        vibrantGreen: '#28965A',
-        sageGreen: '#629460',
+        red: '#fe6559', 
+        pink: '#f1aabd', 
+        yellow: '#fde640', 
+        orange: '#fd8f52', 
+        darkRed: '#cc382a',
       },
       text: {
         lightMode: '#333333',
@@ -22,4 +24,5 @@ export const theme = {
       'crimson-text': ['Crimson Text', 'serif'],
     },
   },
+  plugins: [],
 };

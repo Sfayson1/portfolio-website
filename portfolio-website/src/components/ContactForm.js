@@ -65,7 +65,7 @@ const ContactForm = () => {
       {error && <p className="text-red-500 mb-4">{error}</p>}
       <button
         type="submit"
-        className="bg-[#629460]   font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        className="bg-primary-orange   font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
       >
         Submit
       </button>

@@ -1,3 +1,5 @@
+@import '../styles/globals.css';
+
 .about-me {
     display: flex;
     justify-content: center;
@@ -7,7 +9,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #629460;
     border-radius: 18px;
     width: 134px;
     height: 44px;

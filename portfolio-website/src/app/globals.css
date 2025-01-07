@@ -6,18 +6,17 @@
 /* Base theme colors */
 :root {
   --text-color: #333333; /* Sets a default text color variable as a fallback for light theme */
-  --bg-color: #D7F9F1; /* Sets a default background color variable as a fallback for light theme */
+  --bg-color: #ffffff;/* Sets a default background color variable as a fallback for light theme */
 }
 
 /* Define color variables */
 :root {
   /* These are global color variables that can be used throughout the site for consistent theming */
-  --primary-bright-blue: #3AAED8;
-  --primary-light-turquoise: #7CFEF0;
-  --primary-mint-green: #D7F9F1;
-  --primary-deep-green: #618B4A;
-  --primary-vibrant-green: #28965A;
-  --primary-sage-green: #629460;
+  --primary-yellow: #fde640;
+  --primary-red: #fe6559;
+  --primary-pink: #f1aabd;
+  --primary-orange: #fd8f52;
+  --primary-darkRed: #cc382a;
   --text-light-mode: #333333; /* Text color for light mode */
   --text-dark-mode: #F5F5F5; /* Text color for dark mode */
   --color-background-dark: #1f1f1f; /* Background color for dark mode */
@@ -27,7 +26,7 @@
 /* Light theme styles */
 .theme-light {
   --text-color: var(--text-light-mode); /* Overrides text color variable for light theme */
-  --bg-color: var(--primary-mint-green); /* Overrides background color variable for light theme */
+  --bg-color: var(--color-background-light); /* Overrides background color variable for light theme */
 }
 
 /* Dark theme styles */
@@ -49,5 +48,5 @@ body {
 }
 
 .subscribe {
-  background-color: var(--primary-sage-green);
+  background-color: var(--primary-orange);
 }

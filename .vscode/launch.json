@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "node-terminal",
+            "name": "Run Script: start",
+            "request": "launch",
+            "command": "npm run start",
+            "cwd": "${workspaceFolder}/portfolio-website"
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Attach to Strapi",
+            "port": 9229,
+            "restart": true,
+            "protocol": "inspector",
+            "skipFiles": ["<node_internals>/**"],
+            "cwd": "${workspaceFolder}/portfolio-website"
+        }
+    ]
+}
