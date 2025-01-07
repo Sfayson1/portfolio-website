@@ -7,7 +7,7 @@ const Footer = () => {
       <SocialLinks/>
       </div>
       <p className="text-center mt-4">
-        &copy; {new Date().getFullYear()} Your Website Name. All rights
+        &copy; {new Date().getFullYear()} Sherika Fayson. All rights
         reserved.
       </p>
     </footer>

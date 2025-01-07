@@ -5,7 +5,7 @@ const NavigationMenu = () => {
   return (
     <nav className="flex justify-between px-4 py-2 ">
       {/* Logo on the left */}
-      <h1 className="text-xl justify-start">Sherika's Portfolio</h1>
+      <h1 className="text-xl justify-start font-bold text-primary-red">Sherika Fayson</h1>
 
       {/* Navigation links on the right */}
       <ul className="flex justify-evenly space-x-4">

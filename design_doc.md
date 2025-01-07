@@ -7,13 +7,11 @@
 - Styling: CSS modules or styled-components for scoped styling, with TailwindCSS as an optional utility-first CSS framework for rapid development.
 
 ### Color Scheme and Typography:
-- Primary Colors:
-- Bright Blue: #3AAED8
-- Light Turquoise: #7CFEF0
-- Mint Green: #D7F9F1
-- Deep Green: #618B4A
-- Vibrant Green: #28965A
-- Sage Green: #629460
+#fe6559	
+#f1aabd	
+#fde640	
+#fd8f52	
+#cc382a
 #### Text Colors:
 - Light Mode: Charcoal Gray (e.g., #333333)
 - Dark Mode: Off-White (e.g., #F5F5F5)

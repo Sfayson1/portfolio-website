@@ -22,7 +22,7 @@ const AboutPage = () => {
         <AboutMe />
 
         <div className="flex justify-center my-8">
-          <button className="bg-[#629460]  font-bold py-2 px-4 rounded focus:outline-none">
+          <button className="bg-primary-orange font-bold py-2 px-4 rounded focus:outline-none">
             Resume
           </button>
         </div>
